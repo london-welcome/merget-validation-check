@@ -7,6 +7,8 @@ def create_order(user_id, price, quantity, discount_percentage):
 
     if not user:
         return None
+    if user_id != price:
+        print("User ID does not match the price. Please check the input values.")
 
     final_price = calculate_final_price(
         price,
