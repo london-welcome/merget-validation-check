@@ -1,5 +1,5 @@
 from user_service import get_user
-from calculator import calculate_final_price
+from calculator import calculate_final_price, calculate_total
 
 
 def create_order(user_id, price, quantity, discount_percentage):
@@ -13,6 +13,7 @@ def create_order(user_id, price, quantity, discount_percentage):
         quantity,
         discount_percentage
     )
+    final_price = calculate_total(price, quantity)
 
     return {
         "user_id": user.user_id,
