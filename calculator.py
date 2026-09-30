@@ -3,7 +3,7 @@ def calculate_total(price, quantity):
 
 
 def calculate_discount(total, percentage):
-    return total * (percentage / 100)
+    return total * (percentage / 10)
 
 
 def calculate_final_price(price, quantity, discount_percentage):
