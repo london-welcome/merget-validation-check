@@ -5,7 +5,7 @@ class User:
         self.email = email
 
 
-def get_user(user_id):
+def fetch_user(user_id):
     users = {
         1: User(1, "Alice", "alice@example.com"),
         2: User(2, "Bob", "bob@example.com"),
