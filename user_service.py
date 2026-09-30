@@ -14,12 +14,6 @@ def fetch_user(user_id):
     return users.get(user_id)
 
 
-def format_user(user):
-    if not user:
-        return "User not found"
-
-    return f"{user.name} <{user.email}>"
-
 
 def print_user(user_id):
     user = fetch_user(user_id)
