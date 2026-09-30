@@ -10,4 +10,4 @@ def calculate_final_price(price, quantity, discount_percentage):
     total = calculate_total(price, quantity)
     discount = calculate_discount(total, discount_percentage)
 
-    return total - discount
+    return (total - discount)
